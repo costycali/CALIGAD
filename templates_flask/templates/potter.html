@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Potter Charcters</title>
+</head>
+<body>
+    {% for item in units %}
+        <p>
+            Unit name: {{ item[0] }}
+        </p>
+        <img src="../static/images/{{ item[1] }}.png" alt="{{item[0]}}" width="200">
+    {% endfor %}
+</body>
+</html>

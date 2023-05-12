@@ -21,4 +21,4 @@ app = Flask(__name__)
 def unitlist():
     mycursor.execute("SELECT * FROM character_Unit")
     myresult = mycursor.fetchall()
-    return render_template('hello.html', units=myresult)
+    return render_template('potter.html', units=myresult)

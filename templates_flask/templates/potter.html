@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="../static/css/potty.css">
     <title>Potter Charcters</title>
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/harry-potter');
+    </style>
+
 </head>
+
 <body>
+    <h1 class="colore"> I PERSONAGGI BIRRA-BURROSI DI POTTY</h1>
     {% for item in units %}
-        <p>
-            Unit name: {{ item[0] }}
-        </p>
-        <img src="../static/images/{{ item[1] }}.png" alt="{{item[0]}}" width="200">
+    <p>
+        Character Name: {{ item[1] }}
+        Species: {{ item [2]}}
+        Gender: {{ item [3]}}
+        House: {{ item [4]}}
+        Patronus: {{ item [5]}}
+        Wand (Wood): {{ item [6]}}
+        Wand (Core): {{ item [7]}}
+    </p>
+    <img src="../static/images/{{ item[1] }}.png" alt="{{item[0]}}" width="200">
     {% endfor %}
 </body>
+
 </html>

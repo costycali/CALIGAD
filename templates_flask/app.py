@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 
  
-@app.route('/units')
+@app.route('/')
 def unitlist():
     mycursor.execute("SELECT * FROM character_Unit")
     myresult = mycursor.fetchall()

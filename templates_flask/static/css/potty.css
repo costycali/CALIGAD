@@ -2,3 +2,21 @@
     font-family: 'Harry Potter', sans-serif;
 
 }
+ 
+body{
+    background-image: url(../images/Hogwarts.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    
+}
+
+.contenitore{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.flexitems{
+    flex-basis: 10%;
+}

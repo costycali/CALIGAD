@@ -1,5 +1,7 @@
 .colore {
     font-family: 'Harry Potter', sans-serif;
+    color: aliceblue;
+    text-align: center;
 
 }
  
@@ -7,16 +9,32 @@ body{
     background-image: url(../images/Hogwarts.jpg);
     background-repeat: no-repeat;
     width: 100%;
+    color: white;
     
 }
 
 .contenitore{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    
-
+    justify-content: space-around;
 }
 
 .flexitems{
     flex-basis: 10%;
 }
+
+body {
+    /* The image used */
+    background-image: url ("../images/Hogwarts.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ 
+  

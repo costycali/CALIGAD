@@ -13,17 +13,20 @@
     <body style="background-image: url('../static/images/Hogwarts.jpg'); width: 100%;">
     <h1 class="colore"> I PERSONAGGI BURRO-BIRROSI DI POTTY</h1>
     <div class="contenitore">
-    {% for item in units %}
-    <p>
-        Character Name: {{ item[1] }}<br>
-        Species: {{ item [2]}}<br>
-        Gender: {{ item [3]}}<br>
-        House: {{ item [4]}}<br>
-        Patronus: {{ item [5]}}<br>
-        Wand (Wood): {{ item [6]}}<br>
-        Wand (Core): {{ item [7]}}<br>
-    </p>
-    <img src="../static/images/{{ item[1] }}.png" alt="{{item[0]}}" width="50px" height="150px" class="flexitems">
+        {% for item in units %}
+        <div>
+        <p> Character Name: {{ item[1] }}</p>
+        <p> Species: {{ item [2]}} </p>
+        <p> Gender: {{ item [3]}}</p>
+        <p> Gender: {{ item [3]}}</p>
+        <p> House: {{ item [4]}}</p>
+        <p>  Patronus: {{ item [5]}}</p>
+        <p>Wand (Wood): {{ item [6]}}</p>
+        <p> Wand (Core): {{ item [7]}}</p>
+        <p>cibo preferito: {{ item [8]}}</p>
+        <a href="{{item[8]}}" target="_blank"> Link </a>
+        <img src="../static/images/{{ item[1] }}.png" alt="{{item[0]}}" width="150px" height="300px" class="flexitems">    
+        </div>
     {% endfor %}
     </div>
 </body>
